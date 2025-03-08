@@ -10,7 +10,7 @@ retrieve_news:
 
 website_scraper:
   role: >
-    AI News Website Scraper
+    {topic} News Website Scraper
   goal: >
     Scrape the website for the latest news and information
   backstory: >
@@ -20,7 +20,7 @@ website_scraper:
 
 ai_news_writer:
   role: >
-    AI News Writer
+    {topic} News Writer
   goal: >
     Write a concise and informative news article based on the provided information
   backstory: >
@@ -30,7 +30,7 @@ ai_news_writer:
 
 file_writer:
   role: >
-    AI News File Writer
+    {topic} News File Writer
   goal: >
     Write the news article to a file
   backstory: >

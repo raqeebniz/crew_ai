@@ -1,54 +1,51 @@
-# AiNewsScraper Crew
+# 📰 AI News Scraper  
 
-Welcome to the AiNewsScraper Crew project, powered by [crewAI](https://crewai.com). This template is designed to help you set up a multi-agent AI system with ease, leveraging the powerful and flexible framework provided by crewAI. Our goal is to enable your agents to collaborate effectively on complex tasks, maximizing their collective intelligence and capabilities.
+An AI-powered news scraper that fetches news articles on a user-provided topic and saves the data to a file. It utilizes **CrewAI** to coordinate agents, tasks, and tools for efficient web scraping.  
 
-## Installation
+## 🚀 Features  
+- Scrapes news articles based on user input  
+- Uses **CrewAI** for agent-based task execution  
+- Saves scraped data to a file for easy access  
 
-Ensure you have Python >=3.10 <3.13 installed on your system. This project uses [UV](https://docs.astral.sh/uv/) for dependency management and package handling, offering a seamless setup and execution experience.
+## 🛠️ Technologies Used  
+- **Python**  
+- **CrewAI** (Agents, Tasks, Crews, and Tools)  
+- **UV** (for efficient execution)  
 
-First, if you haven't already, install uv:
-
-```bash
-pip install uv
+## 📂 Project Structure  
+```
+AI_NEWS_SCRAPER/
+│── .venv/                  # Virtual environment  
+│── knowledge/              # Stores knowledge files  
+│── news/                   # Scraped news data  
+│── src/ai_news_scraper/    # Main source code  
+│   │── _pycache_/          # Python cache  
+│   │── config/             # Configuration files  
+│   │── tools/              # Custom tools for scraping  
+│   │── __init__.py         # Package initializer  
+│   │── crew.py             # CrewAI setup (agents, tasks, crews)  
+│   │── main.py             # Entry point of the scraper  
+│── tests/                  # Test cases  
+│── .env                    # Environment variables  
+│── .gitignore              # Git ignore file  
+│── output.md               # Output file for scraped data  
+│── pyproject.toml          # Project dependencies  
+│── README.md               # Documentation  
+│── uv.lock                 # Lockfile for dependencies  
 ```
 
-Next, navigate to your project directory and install the dependencies:
+## ⚡ How to Use  
+1. Install dependencies:  
+   ```bash
+   pip install crewai uv
+   ```  
+2. Run the scraper:  
+   ```bash
+   python main.py
+   ```  
+3. Enter a topic when prompted, and the scraped data will be saved automatically in the `news/` directory.  
 
-(Optional) Lock the dependencies and install them by using the CLI command:
-```bash
-crewai install
-```
-### Customizing
+## 🎯 Contribution  
+Feel free to contribute by improving the scraper, adding more features, or optimizing performance. Fork the repository, make your changes, and submit a pull request.  
 
-**Add your `OPENAI_API_KEY` into the `.env` file**
-
-- Modify `src/ai_news_scraper/config/agents.yaml` to define your agents
-- Modify `src/ai_news_scraper/config/tasks.yaml` to define your tasks
-- Modify `src/ai_news_scraper/crew.py` to add your own logic, tools and specific args
-- Modify `src/ai_news_scraper/main.py` to add custom inputs for your agents and tasks
-
-## Running the Project
-
-To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
-```bash
-$ crewai run
-```
-
-This command initializes the ai_news_scraper Crew, assembling the agents and assigning them tasks as defined in your configuration.
-
-This example, unmodified, will run the create a `report.md` file with the output of a research on LLMs in the root folder.
-
-## Understanding Your Crew
-
-The ai_news_scraper Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
-
-## Support
-
-For support, questions, or feedback regarding the AiNewsScraper Crew or crewAI.
-- Visit our [documentation](https://docs.crewai.com)
-- Reach out to us through our [GitHub repository](https://github.com/joaomdmoura/crewai)
-- [Join our Discord](https://discord.com/invite/X4JWnZnxPb)
-- [Chat with our docs](https://chatg.pt/DWjSBZn)
-
-Let's create wonders together with the power and simplicity of crewAI.
+Happy coding! 🚀  
