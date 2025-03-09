@@ -1,16 +1,16 @@
 [project]
-name = "write_article"
+name = "crewai_supporter"
 version = "0.1.0"
-description = "Write_article using crewAI"
+description = "crewai_supporter using crewAI"
 authors = [{ name = "Your Name", email = "you@example.com" }]
 requires-python = ">=3.10,<3.13"
 dependencies = [
-    "crewai[tools]>=0.100.1,<1.0.0"
+    "crewai-tools>=0.37.0",
+    "crewai[tools]>=0.100.1,<1.0.0",
 ]
 
 [project.scripts]
-run-article = "write_article.main:run"
-
+support = "crewai_supporter.main:run"
 
 [build-system]
 requires = ["hatchling"]
